@@ -7,6 +7,6 @@ The OM system architecture includes a relational database (MySQL). Not only does
 
 (click on the image to view it full size).
 
-Shipping is planned and fulfilled by the company’s employees using vehicles owned or leased by the company.
+Shipping is planned and fulfilled by OM’s employees using vehicles owned or leased by the company.
 
 ![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM_Shipping.svg)
