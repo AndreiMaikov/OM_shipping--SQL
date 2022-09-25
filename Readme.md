@@ -20,3 +20,5 @@ It is required that the shipping process is organized in what the stakeholders c
 ![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM_Shipping.svg)
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
+
+This sentence uses `$` delimiters to show math inline: $\sqrt{3x-1}+(1+x)^2$
