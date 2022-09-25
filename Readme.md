@@ -8,7 +8,7 @@ The following diagram features the DB’s conceptual data model:
 
 (click on the image to view it full size).
 
-It is possible that someone involved in OM business processes can have several different roles. For example, a person can act in one transaction as a buyer and in other &mdash; as a seller, or the same employee can do order picking and deliver it as a driver. This results in many-to-many relationships between **users** (those involved in the OM business processes) and **the roles** available in such processes (that are Customer, Vendor, Administrator, Picker and Driver). To resolve these many-to-many relationships in compliance with the third normal form requirements, a three-table structure users&ndash;roles&ndash;user_roles is utilized. Each row of the latter table corresponds to a user and one of the user’s roles.
+It is possible that someone involved in OM business processes can have several different roles. For example, a person can act in one transaction as a buyer and in other &mdash; as a seller, or the same employee can pick an order and deliver it as a driver. This results in many-to-many relationships between **users** (those involved in the OM business processes) and **the roles** available in such processes (that are Customer, Vendor, Administrator, Picker and Driver). To resolve these many-to-many relationships in compliance with the third normal form requirements, a three-table structure users&ndash;roles&ndash;user_roles is utilized. Each row of the latter table corresponds to a user and one of the user’s roles.
 
 ## OM shipping process organization principles and their implementation  in the DB
 
