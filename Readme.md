@@ -3,7 +3,7 @@ The schema mentioned in the title was created as part of a major project aimed a
 
 ## On the entire OM database
 
-The OM system architecture includes a 3NF database (MySQL). Not only does this DB hold all the information about OM's customers and their orders as well as sellers and their products, but it is also meant to facilitate OM shipping operations. 
+The OM system architecture includes a 3NF database (MySQL). Not only does this DB hold all the information about OM's customers and their orders as well as sellers and their products, but it is used for planning shipping operations. 
 The following diagram shows the DB’s final conceptual data model:
 
 ![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM.png)
