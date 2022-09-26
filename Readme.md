@@ -12,11 +12,13 @@ It is possible that someone involved in OM business processes can have several d
 
 This results in many-to-many relationships between **users** (those involved in the OM business processes) and **the roles** available in such processes (that are Customer, Vendor, Administrator, Picker and Driver). To resolve these many-to-many relationships in compliance with the third normal form requirements, a three-table structure users&ndash;roles&ndash;user_roles is utilized. Each row of the latter table corresponds to a user and one of the user’s roles.
 
-## OM shipping process organization principles and their implementation  in the DB
+## OM shipping process features and their implementation in the schema
 
-All OM’s shipping operations are both planned and carried out by the company’s employees; the vehicles used can be owned or leased by the company.
+The DB was designed to suit/match/{?conform] the following characteristics of the OM shipping process:
 
-It is required that the shipping process is organized in what the stakeholders calls **waves**. A wave is an established by OM time interval and a set of shipping assignments that are to be started and finished within this in interval. Several waves might be created within one day.
+- All OM’s shipping operations are both planned and carried out by the company’s employees; the vehicles used can be owned or leased by the company.
+- Shipping assignments: ...
+- It is required that the shipping process is organized in what the stakeholders calls waves. A wave is an established by OM time interval and a set of shipping assignments that are to be started and finished during this in interval. Several waves might be created within one day.
 
 
 ![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM_Shipping.svg)
