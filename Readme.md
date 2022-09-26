@@ -14,7 +14,7 @@ This results in many-to-many relationships between **users** (those involved in 
 
 ## OM shipping process features and their implementation in the schema
 
-The DB was designed to suit/match/{?conform] the following characteristics of the OM shipping process:
+The DB was designed to suit the following characteristics of the OM shipping process:
 
 - All OM’s shipping operations are both planned and carried out by the company’s employees; the vehicles used for shipping are owned or leased by the company.
 - Shipping assignments: ...
