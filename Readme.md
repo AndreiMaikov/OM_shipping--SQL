@@ -16,7 +16,7 @@ This results in many-to-many relationships between **users** (those involved in 
 
 The DB was designed to suit/match/{?conform] the following characteristics of the OM shipping process:
 
-- All OM’s shipping operations are both planned and carried out by the company’s employees; the vehicles used are owned or leased by the company.
+- All OM’s shipping operations are both planned and carried out by the company’s employees; the vehicles used for shipping are owned or leased by the company.
 - Shipping assignments: ...
 - It is required that the shipping process is organized in what the stakeholders calls waves. A wave is an established by OM time interval and a set of shipping assignments that are to be started and finished during this in interval. Several waves might be created within one day.
 
