@@ -24,7 +24,7 @@ The DB was designed to suit the following characteristics of the OM shipping pro
 
 - All OM’s shipping operations are both planned and carried out by the company’s employees; the vehicles used for shipping are owned or leased by the company.
 - Order pickers and drivers (and, if there are any, employees who do both jobs) must be provided with shipping assignments specifying the orders they need to assemble/deliver, the related locations and  completion times, as well instructions regarding packing orders and passing them from pickers to drivers
-- It is required that the shipping process is organized in so-called **waves**. A wave consists of a time interval established by the OM management and a set of shipping assignments that are to be started and finished during this interval. Several waves can be planned for one day.
+- It is required that the shipping process is organized in so-called **waves**. A wave consists of a time interval established by the OM management and a set of shipping assignments that are to be started and finished during this interval. Several waves can be planned for one day (e.g. 9 am &ndash; 12 pm, 1 pm &nbsp; 4 pm and 5 pm &nbsp; 8 pm).
 
 
 ![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM_Shipping.svg)
