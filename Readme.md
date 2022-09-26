@@ -1,7 +1,7 @@
 # Online Marketplace Shipping Schema Project
 The schema mentioned in the title was created as part of a major project aimed at building from scratch some online marketplace (I’ll be referring to this particular online marketplace as just **OM**). 
 
-# Notes on the entire OM database
+## Notes on the entire OM database
 
 The OM system architecture includes a 3NF database (MySQL). Not only does this DB hold all the information about OM's customers and their orders as well as sellers and their products, but it is also meant to facilitate OM shipping operations. 
 The following diagram shows the DB’s final conceptual data model:
