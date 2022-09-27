@@ -28,6 +28,7 @@ Wave planning can be done in two stages:
     **(A**)&nbsp;determining which employees and vehicles are available for the wave, and
     **(B)**&nbsp;assigning vehicles to drivers, dispatching  orders to pickers and drivers, and preparing shipment assignments for them.
 
+### Determining employee and vehicle availability
 
 
 
