@@ -25,8 +25,8 @@ The Shipping tables were designed to suit the following features of the OM shipp
 - It is required that the shipping process is organized in so-called **waves**. A wave consists of a time interval established by the OM management and a set of shipping assignments that are to be started and finished during this interval. Several waves can be planned for one day (e.g., 10&nbsp;am&nbsp;&ndash;&nbsp;2&nbsp;pm and 3&nbsp;pm&nbsp;&ndash;&nbsp;7&nbsp;pm).
 
 Wave planning can be done in two stages: 
-&nbsp;&nbsp;**(A**)&nbsp;&nbsp;determining which employees and vehicles are available for the wave, and
-&nbsp;&nbsp;**(B)**&nbsp;&nbsp;assigning vehicles to drivers and dispatching  orders to pickers and drivers.
+**(A**)&nbsp;determining which employees and vehicles are available for the wave, and
+**(B)**&nbsp;assigning vehicles to drivers and dispatching  orders to pickers and drivers.
 
 
 
