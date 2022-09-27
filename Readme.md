@@ -26,7 +26,7 @@ The Shipping tables were designed to suit the following characteristics of the O
 
 Wave planning can be done in two stages: 
     **(A**)&nbsp;determining which employees and vehicles are available for the wave, and
-    **(B)**&nbsp;assigning vehicles to drivers and dispatching  orders to pickers and drivers.
+    **(B)**&nbsp;assigning vehicles to drivers, dispatching  orders to pickers and drivers, and preparing shipment assignments for them.
 
 
 
