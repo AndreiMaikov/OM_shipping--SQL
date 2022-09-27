@@ -26,9 +26,9 @@ The Shipping tables were designed to suit the following features of the OM shipp
 
 Wave planning can be done in two stages: 
 
-&nbsp;&nbsp;(A)	determining which employees and vehicles are available for the wave;
+&nbsp;&nbsp;(A)&nbsp;&nbsp;determining which employees and vehicles are available for the wave;
 
-(B)	assigning vehicles to drivers and dispatching  orders to pickers and drivers.
+&nbsp;&nbsp;(B)&nbsp;&nbsp;assigning vehicles to drivers and dispatching  orders to pickers and drivers.
 
 
 
