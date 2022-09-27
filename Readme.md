@@ -18,7 +18,7 @@ The structure of the Shipping table group and the reasons why this structure was
 
 ## OM shipping process features and their implementation  in the schema
 
-The DB was designed to suit the following features of the OM shipping process:
+The Shipping tables were designed to suit the following features of the OM shipping process:
 
 - All OM’s shipping operations are both planned and carried out by the company’s employees; the vehicles used for shipping are owned or leased by the company.
 - Order pickers and drivers (and, if there are any, employees who do both jobs) must be provided with shipping assignments specifying the orders they need to assemble/deliver, the related locations and  completion times, as well instructions regarding packing orders and passing them from pickers to drivers
