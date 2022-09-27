@@ -18,15 +18,15 @@ This results in many-to-many relationships between **users** (those involved in 
 
 The structure of the Shipping table group and the reasons why this structure was chosen are discussed below.
 
-## OM shipping process features and their implementation in the schema
+## OM shipping process features and their implementation  in the schema
 
-The DB was designed to suit the following characteristics of the OM shipping process:
+The DB was designed to suit the following features of the OM shipping process:
 
 - All OM’s shipping operations are both planned and carried out by the company’s employees; the vehicles used for shipping are owned or leased by the company.
 - Order pickers and drivers (and, if there are any, employees who do both jobs) must be provided with shipping assignments specifying the orders they need to assemble/deliver, the related locations and  completion times, as well instructions regarding packing orders and passing them from pickers to drivers
 - It is required that the shipping process is organized in so-called **waves**. A wave consists of a time interval established by the OM management and a set of shipping assignments that are to be started and finished during this interval. Several waves can be planned for one day (e.g., 10&nbsp;am&nbsp;&ndash;&nbsp;2&nbsp;pm and 3&nbsp;pm&nbsp;&ndash;&nbsp;7&nbsp;pm).
 
-Therefore, the Shipping tables should be designed so that their structure facilitate wave planning.
+
 
 
 ![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM_Shipping.svg)
