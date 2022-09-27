@@ -24,6 +24,13 @@ The Shipping tables were designed to suit the following features of the OM shipp
 - Order pickers and drivers (and, if there are any, employees who do both jobs) must be provided with shipping assignments specifying the orders they need to assemble/deliver, the related locations and  completion times, as well instructions regarding packing orders and passing them from pickers to drivers
 - It is required that the shipping process is organized in so-called **waves**. A wave consists of a time interval established by the OM management and a set of shipping assignments that are to be started and finished during this interval. Several waves can be planned for one day (e.g., 10&nbsp;am&nbsp;&ndash;&nbsp;2&nbsp;pm and 3&nbsp;pm&nbsp;&ndash;&nbsp;7&nbsp;pm).
 
+Wave planning can be done in two stages: 
+
+&nbsp;&nbsp;(A)	determining which employees and vehicles are available for the wave;
+
+(B)	assigning vehicles to drivers and dispatching  orders to pickers and drivers.
+
+
 
 
 
