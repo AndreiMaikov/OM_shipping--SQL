@@ -27,10 +27,10 @@ The Shipping tables were designed to suit the following characteristics of the O
 Wave planning can be done in two stages: 
     **(A**)&nbsp;determining which employees and vehicles are available for the wave, and
     **(B)**&nbsp;assigning vehicles to drivers, dispatching  orders to pickers and drivers, and preparing shipment assignments for them.
+    
+    
 
-### Determining employee and vehicle availability
-
-
+### Stage A. Determining employee and vehicle availability. OM Shipping schema
 
 
 ![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM_Shipping.svg)
