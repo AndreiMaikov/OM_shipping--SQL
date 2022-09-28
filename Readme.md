@@ -50,6 +50,12 @@ The four tables used for determining employee and vehicle availability are:
 3. vehicles
 4. vehicles_out_of_service
 
+The staff_regular_availability table stores each employee’s individual weekly schedule (which can be different for different employees).  The following is supported:
+- the availability of the employee can vary from day to day during the week; 
+- several time intervals of availability are possible for one user;
+- exeptions from the regular availability can take place temporarily for any interval (field: exceptions), e.g. "Will be 5 min. late"
+- the user can be temporarily unavailable for the interval (indicated by ...)
+
 
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
