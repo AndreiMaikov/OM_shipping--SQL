@@ -57,7 +57,10 @@ The **staff_regular_availability** table stores each employee’s individual wee
 - exeptions from the regular availability can take place temporarily for any interval (field: exceptions), e.g. "Will be 5 min. late";
 - the employee can be temporarily unavailable for a given interval (indicated by ...).
 
-
+The **blocked_periods** table contains information regarding planned periods when each user will be unavailable, 
+	such as vacations, leaves for medical reasons, 
+	holidays specific to religious or cultural traditions (e.g. hanuka), etc.
+	Each user may have several such blocked periods.
 
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
