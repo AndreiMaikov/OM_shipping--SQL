@@ -32,7 +32,9 @@ Wave planning can be done in two stages:
 
 ### Stage A. Determining employee and vehicle availability. OM Shipping schema
 
-These tasks define the structure of the Shipping section [of the OM database]. The Shipping tables can be designed within a smaller schema &mdash; **OM Shipping schema**&nbsp;&mdash; which includes only them and the user–user_roles–roles group of the Common section. 
+These tasks define the structure of the Shipping section [of the OM database]. The Shipping tables can be designed within a smaller schema &mdash; **OM Shipping schema**&nbsp;&mdash; which includes only them and the user–user_roles–roles group of the Common section. So,
+
+OM Shipping schema =  Shipping tables from the OM schema + users&ndash;user_roles&ndash;roles
 
 To integrate the Shipping tables developed this way into the entire OM schema, one only needs to add them to the rest of the tables: no references between the Shipping tables and the tables in Customers, Vendors, Products, and Orders sections are required.
 
