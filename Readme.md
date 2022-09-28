@@ -43,6 +43,8 @@ To integrate the Shipping tables developed this way into the entire OM schema, o
 
 
 
+
+
 ![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM_Shipping.svg)
 
 The four tables used for determining employee and vehicle availability are:
@@ -61,6 +63,8 @@ The **blocked_periods** table contains information regarding planned periods whe
 	such as vacations, leaves for medical reasons, 
 	holidays specific to religious or cultural traditions, etc.
 	Each user may have several such blocked periods.
+	
+The **vehicles** table stores comprehensive information on the vehicles the company uses for shipping. This information is mostly used in Stage B or for administrative purposes; in stage A, the table is only used as a list of potentially available vehicles.
 
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
