@@ -38,7 +38,7 @@ These tasks define the structure of the Shipping section [of the OM database]. T
 </p>
 
 The following diagram shoes the OM Shipping schema along with the Stage 1 and 2 data flows in the OM system (for the code, see
-<!-- -->
+[//]: #
 <a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/docs/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>
 ).
 To integrate the Shipping tables developed this way into the entire OM schema, one only needs to add them to the rest of the tables: no references between the Shipping tables and the tables in Customers, Vendors, Products, and Orders sections are required.
