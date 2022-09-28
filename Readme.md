@@ -59,7 +59,7 @@ The **staff_regular_availability** table stores each employee’s individual wee
 
 The **blocked_periods** table contains information regarding planned periods when each user will be unavailable, 
 	such as vacations, leaves for medical reasons, 
-	holidays specific to religious or cultural traditions (e.g. hanuka), etc.
+	holidays specific to religious or cultural traditions, etc.
 	Each user may have several such blocked periods.
 
 
