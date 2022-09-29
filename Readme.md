@@ -51,10 +51,14 @@ To integrate the Shipping tables developed this way into the entire OM schema, o
 ![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM_Shipping.svg)
 
 The four tables used for determining employee and vehicle availability are:
-1. staff_regular_availability;
-2. blocked_periods;
-3. vehicles;
-4. vehicles_out_of_service.
+- staff_regular_availability;
+- blocked_periods;
+- vehicles;
+- vehicles_out_of_service.
+
+After the availability is calculated (see below), the results are placed into another two tables:
+- wave_staff_availability
+- wave_vehicle_availability
 
 #### Table functions and structure
 
