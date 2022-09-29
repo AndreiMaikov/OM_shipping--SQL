@@ -46,8 +46,6 @@ To integrate the Shipping tables developed this way into the entire OM schema, o
 
 
 
-
-
 ![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM_Shipping.svg)
 
 The five tables used for determining employee and vehicle availability are:
@@ -92,7 +90,7 @@ A number of constraints are added to the Shipping tables.
 For details about these constraints, please see the code and comments in
 <a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>).
 
-
+#### Calculating availability intervals for a wave
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 
