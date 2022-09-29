@@ -67,6 +67,8 @@ The **blocked_periods** table contains information regarding planned periods whe
 	
 The **vehicles** table stores comprehensive information on the vehicles the company uses for shipping. This information is mostly used in Stage B or for administrative purposes; in stage A, the table is only used as a list of the delivery vehicles owned or leased by the company, with their lease terms if applicable.
 
+#### Constraints
+
 A number of constraints are added to the Shipping tables.
 
 - UNIQUE and CHECK constraints are used to prevent some possible data entry mistakes (such as associating one user id with more than one picker ids, a period’s beginning time being later than its ending time). 
