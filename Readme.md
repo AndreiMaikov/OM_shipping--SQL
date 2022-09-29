@@ -63,7 +63,7 @@ The **blocked_periods** table contains information regarding planned periods whe
 	holidays specific to religious or cultural traditions, etc.
 	Each user may have several such blocked periods.
 	
-The **vehicles** table stores comprehensive information on the vehicles the company uses for shipping. This information is mostly used in Stage B or for administrative purposes; in stage A, the table is only used as a list of potentially available vehicles.
+The **vehicles** table stores comprehensive information on the vehicles the company uses for shipping. This information is mostly used in Stage B or for administrative purposes; in stage A, the table is only used owned or leased by the company, with their lease terms if applicable.
 
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
