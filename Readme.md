@@ -5,7 +5,7 @@
 [On the entire OM database](#EntireDB) <br /> 
 [OM shipping process features and their implementation in the schema](#Shipping_features) <br />
   [Stage A. Determining employee and vehicle availability. OM Shipping schema](#Determining_availability) <br />
-  [Attribute names and values](#naming) <br />
+  [The functions of the tables](#Table_functions) <br />
 [Data retrieving, transforming and loading](#RTL) <br />
   [TokenUpdate: Managing access tokens](#tokens) <br />
   [CatalogETL: Initial catalog import](#initial_import) <br />
@@ -45,7 +45,6 @@ Wave planning can be done in two stages:
     
     
 
-### Stage A. Determining employee and vehicle availability. OM Shipping schema
 <a name = "Determining_availability"><h3>Stage A. Determining employee and vehicle availability. OM Shipping schema</h3></a>
 
 These tasks define the structure of the Shipping section [of the OM database]. The Shipping tables can be designed within a smaller schema &mdash; **OM Shipping schema**&nbsp;&mdash; which includes only them and the user–user_roles–roles group of the Common section; in other words,
@@ -77,6 +76,7 @@ After the availability is calculated (see below), the results are placed into an
 - wave_available_vehicles
 
 #### The functions of the tables
+<a name = "Table_functions"><h3>The functions of the tables</h3></a>
 
 The **wave_timings** table simply contains beginning and ending times of each wave.
 
