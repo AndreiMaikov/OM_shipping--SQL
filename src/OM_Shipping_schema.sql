@@ -136,8 +136,7 @@ CREATE TABLE staff_regular_availability (
 	, user_id INT NOT NULL
 	, wday INT(1) NOT NULL 					-- day of the week: day = 1 for Sunday, day = 2 for Monday, etc.								
 	, interval_beginning TIME NOT NULL 		
-	, interval_end TIME NOT NULL			
-	, exeptions VARCHAR(200) NULL				
+	, interval_end TIME NOT NULL							
 	, type BOOLEAN NOT NULL 		-- flag indicating whether the user is temporarily unavailable for this interval
 	, CHECK (interval_beginning < interval_end)
 	, CONSTRAINT user_wday UNIQUE (user_id, wday)
@@ -148,16 +147,16 @@ CREATE TABLE staff_regular_availability (
 
 /*
 	Supplementary table for determining staff availability;
-	contains information regarding the PLANNED periods when each user will be unavailable, 
+	contains information regarding PLANNED periods when each user will be unavailable, 
 	such as vacations, leaves for medical reasons, 
-	holidays specific to religious or cultural traditions (e.g. hanuka), etc.
+	holidays specific to religious or cultural traditions (e.g. hanukkah), etc.
 	In the table, each user can have several blocked periods
 */
 CREATE TABLE blocked_periods ( 
 	  id INT NOT NULL AUTO_INCREMENT
 	, user_id INT NOT NULL
-	, period_beginnig DATETIME NOT NULL 	-- default - ?
-	, period_end DATETIME NOT NULL			-- default - ?
+	, period_beginnig DATETIME NOT NULL 	
+	, period_end DATETIME NOT NULL			
 	, CHECK (period_beginnig < period_end)
 	, PRIMARY KEY (id)
 	, FOREIGN KEY (user_id) REFERENCES users(id)
@@ -170,8 +169,8 @@ CREATE TABLE blocked_periods (
 CREATE TABLE vehicles_not_in_service (
 	  id INT NOT NULL AUTO_INCREMENT
 	, vehicle_id INT NOT NULL
-	, nis_beginning DATETIME NOT NULL  	-- default - ?
-	, nis_end DATETIME NOT NULL			-- default - ?
+	, nis_beginning DATETIME NOT NULL  	
+	, nis_end DATETIME NOT NULL			
 	, CHECK (nis_beginning < nis_end)
 	, PRIMARY KEY (id)
 	, FOREIGN KEY (vehicle_id) REFERENCES vehicles(id)
