@@ -82,7 +82,7 @@ A number of constraints are added to the Shipping tables.
 
 - UNIQUE and CHECK constraints are used to prevent some possible data entry mistakes (such as associating one user id with more than one picker ids, a period’s beginning time being later than its ending time). 
 
-- ON DELETE CASCADE and ON UPDATE CASCADE are included to avoid errors caused by row deletion or updating when foreign keys are involved. 
+- ON DELETE CASCADE and ON UPDATE CASCADE constraints are included to avoid errors caused by row deletion or updating when foreign keys are involved. 
 
 For details about the constraints mentioned, please see the code.
 
