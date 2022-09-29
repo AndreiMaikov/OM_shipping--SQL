@@ -37,10 +37,11 @@ These tasks define the structure of the Shipping section [of the OM database]. T
    OM Shipping schema =  Shipping tables from the OM schema + users&ndash;user_roles&ndash;roles tables.
 </p>
 
-The following diagram shoes the OM Shipping schema along with the Stage 1 and 2 data flows in the OM system (for the code, see
-<a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>
-).
+The following diagram shoes the OM Shipping schema along with the Stage A and B data flows in the OM system (for the code, see
+<a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>).
 To integrate the Shipping tables developed this way into the entire OM schema, one only needs to add them to the rest of the tables: no references between the Shipping tables and the tables in Customers, Vendors, Products, and Orders sections are required.
+
+
 
 
 
@@ -58,7 +59,12 @@ The **staff_regular_availability** table stores each employee’s individual wee
 - exeptions from the regular availability can take place temporarily for any interval (field: exceptions), e.g. "Will be 5 min. late";
 - the employee can be temporarily unavailable for a given interval (indicated by ...).
 
-
+The **blocked_periods** table contains information regarding planned periods when each user will be unavailable, 
+	such as vacations, leaves for medical reasons, 
+	holidays specific to religious or cultural traditions, etc.
+	Each user may have several such blocked periods.
+	
+The **vehicles** table stores comprehensive information on the vehicles the company uses for shipping. This information is mostly used in Stage B or for administrative purposes; in stage A, the table is only used as a list of potentially available vehicles.
 
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
