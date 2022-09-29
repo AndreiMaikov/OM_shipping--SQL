@@ -47,7 +47,7 @@ Wave planning can be done in two stages:
     
     
 
-<a name = "Determining_availability"><h3>Stage A. Determining employee and vehicle availability. OM Shipping schema</h3></a>
+<a name = "Determining_availability"><h2>Stage A. Determining employee and vehicle availability. OM Shipping schema</h2></a>
 
 These tasks define the structure of the Shipping section [of the OM database]. The Shipping tables can be designed within a smaller schema &mdash; **OM Shipping schema**&nbsp;&mdash; which includes only them and the user–user_roles–roles group of the Common section; in other words,
 <p align = "center">
@@ -77,7 +77,7 @@ After the availability is calculated (see below), the results are placed into an
 - wave_available_staff
 - wave_available_vehicles
 
-<a name = "Table_functions"><h4>Functions of the tables</h4></a>
+<a name = "Table_functions"><h3>Functions of the tables</h3></a>
 
 The **wave_timings** table simply contains beginning and ending times of each wave.
 
@@ -98,7 +98,7 @@ For each vehicle, the **vehicles_not_in_service** table provides beginning and e
 Within each wave and for employee, the table **wave_available_staff** lists all the time intervals that the employee is available for (during the entire interval). The **wave_available_vehicles** table provides the same information about the vehicles.
 
 
-<a name = "Constraints"><h4>Constraints</h4></a>
+<a name = "Constraints"><h3>Constraints</h3></a>
 
 A number of constraints are added to the Shipping tables.
 
@@ -110,7 +110,7 @@ For details about these constraints, please see the code and comments in
 <a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>).
 
 
-<a name = "Calculating_intervals"><h4>Calculating availability intervals for a wave</h4></a>
+<a name = "Calculating_intervals"><h3>Calculating availability intervals for a wave</h3></a>
 
 Speaking mathematically, the problem of determining an employee’s availability for a given wave is essentially a problem of finding the intersection between two sets: the wave’s time interval and the union of all the time intervals when the employee is available (considering the employee’s regular availability and blocked periods). To solve this problem, one have to do some manipulations with inequalities that define time intervals involved. The same is true of determining vehicle availability.
 
