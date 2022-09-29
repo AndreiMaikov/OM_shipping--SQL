@@ -61,7 +61,7 @@ After the availability is calculated (see below), the results are placed into an
 - wave_available_staff
 - wave_available_vehicles
 
-#### Table functions and structure
+#### The functions of the tables
 
 The **wave_timings** table simply contains beginning and ending times of each wave.
 
