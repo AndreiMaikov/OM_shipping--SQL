@@ -92,6 +92,7 @@ A number of constraints are added to the Shipping tables.
 - ON DELETE CASCADE and ON UPDATE CASCADE constraints are included to avoid errors caused by row deletion or updating when foreign keys are involved. 
 
 For details about these constraints, please see the code and comments in
+<!-- a normal html comment -->
 <a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>).
 
 #### Calculating availability intervals for a wave
