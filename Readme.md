@@ -56,7 +56,6 @@ The four tables used for determining employee and vehicle availability are:
 The **staff_regular_availability** table stores each employee’s individual weekly schedule (which can be different for different employees).  The following is supported:
 - the availability of the employee can vary from day to day during the week;
 - several time intervals of availability within a day are possible for one employee;
-- exeptions from the regular availability can take place temporarily for any interval (field: exceptions), e.g. "Will be 5 min. late";
 - the employee can be temporarily unavailable for a given interval (indicated by ...).
 
 The **blocked_periods** table contains information regarding planned periods when each user will be unavailable, 
