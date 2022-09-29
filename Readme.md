@@ -1,6 +1,8 @@
 
 # Online Marketplace Shipping Schema Project
 
+The schema mentioned in the title was created as part of a major project aimed at building from scratch some online marketplace (I’ll be referring to this particular online marketplace as just **OM**). 
+
 ## Contents
 [On the entire OM database](#EntireDB) <br /> 
 [OM shipping process features and their implementation in the schema](#Shipping_features) <br />
@@ -14,8 +16,6 @@
   [CatalogETL: Updating store data in the DB](#updating_data) <br />
 [Further development](#further_development) <br />
 [Acknowledgements](#acknowledgements) <br />
-
-The schema mentioned in the title was created as part of a major project aimed at building from scratch some online marketplace (I’ll be referring to this particular online marketplace as just **OM**). 
 
 <a name = "EntireDB"><h2>On the entire OM database</h2></a>
 
