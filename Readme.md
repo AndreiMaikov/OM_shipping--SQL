@@ -97,7 +97,7 @@ For each vehicle, the **vehicles_not_in_service** table provides beginning and e
 
 Within each wave and for employee, the table **wave_available_staff** lists all the time intervals that the employee is available for (during the entire interval). The **wave_available_vehicles** table provides the same information about the vehicles.
 
-#### Constraints
+
 <a name = "Constraints"><h4>Constraints</h4></a>
 
 A number of constraints are added to the Shipping tables.
@@ -109,7 +109,8 @@ A number of constraints are added to the Shipping tables.
 For details about these constraints, please see the code and comments in
 <a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>).
 
-#### Calculating availability intervals for a wave
+
+<a name = "Calculating_interevals"><h4>Calculating availability intervals for a wave</h4></a>
 
 Speaking mathematically, the problem of determining an employee’s availability for a given wave is essentially a problem of finding the intersection between two sets: the wave’s time interval and the union of all the time intervals when the employee is available (considering the employee’s regular availability and blocked periods). To solve this problem, one have to do some manipulations with inequalities that define time intervals involved. The same is true of determining vehicle availability.
 
