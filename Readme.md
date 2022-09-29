@@ -58,8 +58,8 @@ The five tables used for determining employee and vehicle availability are:
 - vehicles_out_of_service.
 
 After the availability is calculated (see below), the results are placed into another two tables:
-- wave_staff_availability
-- wave_vehicle_availability
+- wave_available_staff
+- wave_available_vehicles
 
 #### Table functions and structure
 
@@ -79,7 +79,7 @@ The **vehicles** table stores comprehensive information on the vehicles the comp
 
 For each vehicle, the **vehicles_not_in_service** table provides beginning and ending times of the planned periods when the vehicle cannot be used for shipping due to any reason – e.g., being in repairs or employed for another service. 
 
-Within each wave and for employee, the table **wave_staff_availability** lists all the time intervals that the employee is available for (during the entire interval). The **wave_vehicle_availability** table provides the same information about the vehicles.
+Within each wave and for employee, the table **wave_available_staff** lists all the time intervals that the employee is available for (during the entire interval). The **wave_available_vehicles** table provides the same information about the vehicles.
 
 #### Constraints
 
