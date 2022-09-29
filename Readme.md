@@ -74,6 +74,8 @@ The **blocked_periods** table contains information regarding planned periods whe
 	
 The **vehicles** table stores comprehensive information on the vehicles the company uses for shipping. This information is mostly used in Stage B or for administrative purposes; in stage A, the table is only used as a list of the delivery vehicles owned or leased by the company, with their lease terms if applicable.
 
+For each vehicle, the **vehicles_not_in_service** lists beginning and ending times of the periods when the vehicle cannot be used for shipping due to any reason – e.g., being in repairs or employed for another service. 
+
 #### Constraints
 
 A number of constraints are added to the Shipping tables.
