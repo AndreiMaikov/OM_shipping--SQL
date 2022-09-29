@@ -92,6 +92,13 @@ For details about these constraints, please see the code and comments in
 
 #### Calculating availability intervals for a wave
 
+Speaking mathematically, the problem of determining an employee’s availability for a given wave is essentially is a problem of finding the intersection between two sets: the wave’s time interval and the union of all the time intervals when the employee (considering the employee’s regular availability and blocked periods). 
+
+To solve this problem, one have to do some manipulations with inequalities that define time intervals involved. Such calculations can be performed either on the database level using stored procedures or, alternatively, on the application level of the system (see the diagram).
+
+Each of these options has its advantages and drawbacks. Choosing between them needs weighing such factors as the convenience of implementation and maintenance as well as the effect on the performance of the specific system in question.
+
+
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 
 This sentence uses `$` delimiters to show math inline: $\sqrt{3x-1}+(1+x)^2$
