@@ -31,7 +31,7 @@ This results in many-to-many relationships between **users** (those involved in 
 The structure of the Shipping table group and the reasons why this structure was chosen are discussed below.
 
 
-<a name = "Shipping_features><h2>OM shipping process features and their implementation in the schema</h2></a>
+<a name = "Shipping_features"><h2>OM shipping process features and their implementation in the schema</h2></a>
 
 The Shipping tables were designed to suit the following characteristics of the OM shipping process:
 
