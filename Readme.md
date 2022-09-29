@@ -53,6 +53,8 @@ The four tables used for determining employee and vehicle availability are:
 3. vehicles;
 4. vehicles_out_of_service.
 
+#### Table functions and structure
+
 The **staff_regular_availability** table stores each employee’s individual weekly schedule (which can be different for different employees).  The following is supported:
 - the availability of the employee can vary from day to day during the week;
 - several time intervals of availability within a day are possible for one employee;
@@ -65,11 +67,11 @@ The **blocked_periods** table contains information regarding planned periods whe
 	
 The **vehicles** table stores comprehensive information on the vehicles the company uses for shipping. This information is mostly used in Stage B or for administrative purposes; in stage A, the table is only used as a list of the delivery vehicles owned or leased by the company, with their lease terms if applicable.
 
-A number of constraints were added in the Shipping tables.
+A number of constraints are added to the Shipping tables.
 
-- UNIQUE and CHECK constraints were used to prevent some possible data entry mistakes (such as associating one user id with more than one picker ids, a period’s beginning time being later than its ending time). 
+- UNIQUE and CHECK constraints are used to prevent some possible data entry mistakes (such as associating one user id with more than one picker ids, a period’s beginning time being later than its ending time). 
 
-- ON DELETE CASCADE and ON UPDATE CASCADE were included to avoid errors caused by row deletion or updating when foreign keys are involved. 
+- ON DELETE CASCADE and ON UPDATE CASCADE are included to avoid errors caused by row deletion or updating when foreign keys are involved. 
 
 For details about the constraints mentioned, please see the code.
 
