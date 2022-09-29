@@ -4,7 +4,7 @@
 ## Contents
 [On the entire OM database](#EntireDB) <br /> 
 [OM shipping process features and their implementation in the schema](#Shipping_features) <br />
-  [Stage A. Determining employee and vehicle availability. OM Shipping schema](#string_structure) <br />
+  [Stage A. Determining employee and vehicle availability. OM Shipping schema](#Determining_availability) <br />
   [Attribute names and values](#naming) <br />
 [Data retrieving, transforming and loading](#RTL) <br />
   [TokenUpdate: Managing access tokens](#tokens) <br />
