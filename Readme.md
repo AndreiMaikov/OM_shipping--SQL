@@ -6,8 +6,8 @@
 [OM shipping process features and their implementation in the schema](#Shipping_features) <br />
 [Stage A. Determining employee and vehicle availability. OM Shipping schema](#Determining_availability) <br />
   [Functions of the tables](#Table_functions) <br />
-    [Constraints](#Constraints) <br />
-    [Calculating availability intervals for a wave](#Calculating_intervals) <br />
+  [Constraints](#Constraints) <br />
+  [Calculating availability intervals for a wave](#Calculating_intervals) <br />
 [Data retrieving, transforming and loading](#RTL) <br />
   [TokenUpdate: Managing access tokens](#tokens) <br />
   [CatalogETL: Initial catalog import](#initial_import) <br />
