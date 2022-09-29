@@ -65,6 +65,15 @@ The **blocked_periods** table contains information regarding planned periods whe
 	
 The **vehicles** table stores comprehensive information on the vehicles the company uses for shipping. This information is mostly used in Stage B or for administrative purposes; in stage A, the table is only used as a list of the delivery vehicles owned or leased by the company, with their lease terms if applicable.
 
+A number of constraints were added in the Shipping tables.
+
+- UNIQUE and CHECK constraints were used to prevent some possible data entry mistakes (such as associating one user id with more than one picker ids, a period’s beginning time being later than its ending time). 
+
+- ON DELETE CASCADE and ON UPDATE CASCADE were included to avoid errors caused by row deletion or updating when foreign keys are involved. 
+
+For details about the constraints mentioned, please see the code.
+
+
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 
