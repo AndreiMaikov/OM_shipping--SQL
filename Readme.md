@@ -5,7 +5,7 @@
 [On the entire OM database](#EntireDB) <br /> 
 [OM shipping process features and their implementation in the schema](#Shipping_features) <br />
   [Stage A. Determining employee and vehicle availability. OM Shipping schema](#Determining_availability) <br />
-  [The functions of the tables](#Table_functions) <br />
+  	[The functions of the tables](#Table_functions) <br />
 [Data retrieving, transforming and loading](#RTL) <br />
   [TokenUpdate: Managing access tokens](#tokens) <br />
   [CatalogETL: Initial catalog import](#initial_import) <br />
@@ -76,7 +76,7 @@ After the availability is calculated (see below), the results are placed into an
 - wave_available_vehicles
 
 #### The functions of the tables
-<a name = "Table_functions"><h3>The functions of the tables</h3></a>
+<a name = "Table_functions"><h4>The functions of the tables</h4></a>
 
 The **wave_timings** table simply contains beginning and ending times of each wave.
 
