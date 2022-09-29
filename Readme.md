@@ -103,6 +103,10 @@ Such calculations can be performed either on the database level using stored pro
 
 Each of these options has its advantages and drawbacks. Choosing between them needs weighing such factors as the convenience of implementation and maintenance as well as the effect on the performance of the specific system in question.
 
+In the case of the OM system, a solution based on DB stored procedures was implemented initially, but the final decision was in favour of the use of the application level. The code in 
+<a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>)
+corresponds to the latter approach; the former one is discussed in Shipping_resource_availability __SQL.
+
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 
