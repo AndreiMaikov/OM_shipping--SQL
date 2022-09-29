@@ -104,7 +104,7 @@ Such calculations can be performed either on the database level using stored pro
 Each of these options has its advantages and drawbacks. Choosing between them needs weighing such factors as the convenience of implementation and maintenance as well as the effect on the performance of the specific system in question.
 
 In the case of the OM system, a solution based on DB stored procedures was implemented initially, but the final decision was in favour of the use of the application level. The code in 
-<a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>)
+<a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>
 corresponds to the latter approach; the former one is discussed in Shipping_resource_availability __SQL.
 
 
