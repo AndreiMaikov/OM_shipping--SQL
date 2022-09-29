@@ -1,4 +1,4 @@
-# Online Marketplace Shipping Schema Project
+% Online Marketplace Shipping Schema Project
 The schema mentioned in the title was created as part of a major project aimed at building from scratch some online marketplace (I’ll be referring to this particular online marketplace as just **OM**). 
 
 ## On the entire OM database
