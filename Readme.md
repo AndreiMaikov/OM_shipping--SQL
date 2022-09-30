@@ -125,6 +125,13 @@ corresponds to the latter approach; the former one is discussed in Shipping_reso
 
 <a name = "Stage_B"><h2>Stage B. Dispatching orders and vehicles among employees and preparing shipment assignments</h2></a>
 
+This problem is considerably more complex than determining employee and vehicle availability.
+
+For example, it may need taking into account the maximum cargo weight and volume each available vehicle can carry and the weight and volume of the orders dispatched for shipping, or optimal routing considerations, or how much an employee can lift, or even pikers’ ability to do gift packing. 
+
+Due to the complexity of the problem, it would be ineffective to try to implement any appropriate solving algorithms on the database level. 
+
+
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 
