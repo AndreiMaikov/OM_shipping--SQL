@@ -11,11 +11,7 @@ The schema mentioned in the title was created as part of a major project aimed a
   [Constraints](#Constraints) <br />
   [Calculating availability intervals for a wave](#Calculating_intervals) <br />
 [Stage B. Dispatching orders and vehicles among employees and preparing shipment assignments](#Stage_B) <br />
-  [TokenUpdate: Managing access tokens](#tokens) <br />
-  [CatalogETL: Initial catalog import](#initial_import) <br />
-  [CatalogETL: Updating store data in the DB](#updating_data) <br />
-[Further development](#further_development) <br />
-[Acknowledgements](#acknowledgements) <br />
+[Acknowledgements](#Acknowledgements) <br />
 
 <a name = "EntireDB"><h2>On the entire OM database</h2></a>
 
@@ -132,7 +128,9 @@ it should be done on the application level. Therefore, the only function of the 
 
 As <a href = "#OM_Shipping diagram">the diagram</a> shoes, the information required for Stage B and related to the employees’ and the vehicle’s capabilities is stored in the picker_profiles, driver_profiles, and vehicles tables. Data related to product weights and sizes as well order’s contents are stored in the Products and Orders sections of the database, and the information for routing can be retrieved from the Customers and Vendors sections. All this, along with the data held in the wave_timings, wave_available_staff, and wave_available_vehicles, can provide for successful completion of Stage B on the system's application level.
 
+<a name="Acknowledgements"><h2>Acknowledgements</h2></a>
 
+I would like to thank Alek Mlynek for initiating this project as well as discussing it in depth and in detail.
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 
