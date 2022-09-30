@@ -22,7 +22,7 @@ The following diagram shows the DB’s conceptual data model:
 
 Tables in the diagram are marked accordingly to the type of information they hold – whether it is related to customers, products, etc. The Common group includes a three-table structure **users&ndash;user_roles&ndash;roles**, which is worth elaborating on here.
 
-It is possible that someone involved in OM business processes can have several different roles. For example, a person can act in one transaction as a buyer and in other &mdash; as a seller, or the same employee can pick an order and deliver it as a driver. 
+It is possible that someone involved in OM business processes has more than one role role. For example, a person can act in one transaction as a buyer and in other &mdash; as a seller, or the same employee can pick an order and deliver it as a driver. 
 
 This results in many-to-many relationships between **users** (those involved in the OM business processes) and **the roles** available in such processes (that are Customer, Vendor, Administrator, Picker and Driver). To resolve these many-to-many relationships in compliance with the third normal form requirements, the structure users&ndash;user_roles&ndash;roles is utilized. Each row of the latter table corresponds to a user and one of the user’s roles.
 
