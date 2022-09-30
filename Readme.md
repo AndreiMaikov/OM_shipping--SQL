@@ -89,7 +89,7 @@ The **staff_regular_availability** table stores each employee’s individual wee
 The **blocked_periods** table contains information regarding planned periods when each user will be unavailable, 
 	such as vacations, leaves for medical reasons, 
 	holidays specific to religious or cultural traditions, etc.
-	Each user may have several such blocked periods.
+	Each user may have several blocked periods.
 	
 The **vehicles** table stores comprehensive information on the vehicles the company uses for shipping. This information is mostly used in Stage B or for administrative purposes; in stage A, the table is only used as a list of the delivery vehicles owned or leased by the company, with their lease terms if applicable.
 
