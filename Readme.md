@@ -130,6 +130,8 @@ This problem is considerably more complex than determining employee and vehicle 
 Due to the complexity of the problem, it would be ineffective to try to implement any suitable solving algorithm on the database level&nbsp;&mdash;
 it should be done on the application level. Therefore, the only function of the database is to provide data for such an application level algorithm.
 
+As the diagram shoes, the information required for Stage B and related to the employees’ and the vehicle’s capabilities is stored in the picker_profiles, driver_profiles, and vehicles tables. Data related to product weights and sizes as well order’s contents are stored in the Products and Orders sections of the database, and the information for routing can be retrieved from the Customers and Vendors sections. All this, along with the data held in the wave_timings, wave_available_staff, and wave_available_vehicles, can provide for successful completion of Stage B.
+
 
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
