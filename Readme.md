@@ -6,11 +6,11 @@ The schema mentioned in the title was created as part of a major project aimed a
 ## Contents
 [On the entire OM database](#EntireDB) <br /> 
 [OM shipping process features and their implementation in the schema](#Shipping_features) <br />
-[Stage A. Determining employee and vehicle availability. OM Shipping schema](#Determining_availability) <br />
+[Stage A: Determining employee and vehicle availability. OM Shipping schema](#Determining_availability) <br />
   [Functions of the tables](#Table_functions) <br />
   [Constraints](#Constraints) <br />
   [Calculating availability intervals for a wave](#Calculating_intervals) <br />
-[Stage B. Dispatching orders and vehicles among employees and preparing shipment assignments](#Stage_B) <br />
+[Stage B: Dispatching orders and vehicles among employees and preparing shipment assignments](#Stage_B) <br />
 [Acknowledgements](#Acknowledgements) <br />
 
 <a name = "EntireDB"><h2>On the entire OM database</h2></a>
@@ -43,7 +43,7 @@ Wave planning can be done in two stages:
     
     
 
-<a name = "Determining_availability"><h2>Stage A. Determining employee and vehicle availability. OM Shipping schema</h2></a>
+<a name = "Determining_availability"><h2>Stage A: Determining employee and vehicle availability. OM Shipping schema</h2></a>
 
 These tasks define the structure of the Shipping section [of the OM database]. The Shipping tables can be designed within a smaller schema &mdash; **OM Shipping schema**&nbsp;&mdash; which includes only them and the user–user_roles–roles group of the Common section; in other words,
 <p align = "center">
@@ -119,7 +119,7 @@ In the case of the OM system, a solution based on DB stored procedures was imple
 <a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>
 corresponds to the latter approach; the former one is discussed in Shipping_resource_availability __SQL.
 
-<a name = "Stage_B"><h2>Stage B. Dispatching orders and vehicles among employees and preparing shipment assignments</h2></a>
+<a name = "Stage_B"><h2>Stage B: Dispatching orders and vehicles among employees and preparing shipment assignments</h2></a>
 
 This problem is considerably more complex than determining employee and vehicle availability. For example, it may need taking into account the maximum cargo weight and volume each available vehicle can carry and the weight and volume of the orders dispatched for shipping, or optimal routing considerations, or how much an employee can lift, or even pickers’ ability to do gift packing. 
 
