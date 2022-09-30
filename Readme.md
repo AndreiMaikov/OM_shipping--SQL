@@ -125,7 +125,7 @@ corresponds to the latter approach; the former one is discussed in Shipping_reso
 
 <a name = "Stage_B"><h2>Stage B. Dispatching orders and vehicles among employees and preparing shipment assignments</h2></a>
 
-This problem is considerably more complex than determining employee and vehicle availability. For example, it may need taking into account the maximum cargo weight and volume each available vehicle can carry and the weight and volume of the orders dispatched for shipping, or optimal routing considerations, or how much an employee can lift, or even pikers’ ability to do gift packing. 
+This problem is considerably more complex than determining employee and vehicle availability. For example, it may need taking into account the maximum cargo weight and volume each available vehicle can carry and the weight and volume of the orders dispatched for shipping, or optimal routing considerations, or how much an employee can lift, or even pickers’ ability to do gift packing. 
 
 Due to the complexity of the problem, it would be ineffective to try to implement any suitable solving algorithm on the database level&nbsp;&mdash;
 it should be done on the application level. Therefore, the only function of the database is to provide data for such an application level algorithm.
