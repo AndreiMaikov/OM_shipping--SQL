@@ -10,7 +10,7 @@ The schema mentioned in the title was created as part of a major project aimed a
   [Functions of the tables](#Table_functions) <br />
   [Constraints](#Constraints) <br />
   [Calculating availability intervals for a wave](#Calculating_intervals) <br />
-[Data retrieving, transforming and loading](#RTL) <br />
+[Stage B. Dispatching orders and vehicles to/among/between employees and preparing shipment assignments](#Stage_B) <br />
   [TokenUpdate: Managing access tokens](#tokens) <br />
   [CatalogETL: Initial catalog import](#initial_import) <br />
   [CatalogETL: Updating store data in the DB](#updating_data) <br />
@@ -122,6 +122,8 @@ Each of these options has its advantages and drawbacks. Choosing between them ne
 In the case of the OM system, a solution based on DB stored procedures was implemented initially, but the final decision was in favour of the use of the application level. The code in 
 <a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>
 corresponds to the latter approach; the former one is discussed in Shipping_resource_availability __SQL.
+
+<a name = "Stage_B"><h2>Stage B. Dispatching orders and vehicles among employees and preparing shipment assignments
 
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
