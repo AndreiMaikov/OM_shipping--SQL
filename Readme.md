@@ -79,7 +79,7 @@ The **wave_timings** table simply contains beginning and ending times of each wa
 
 The **staff_regular_availability** table stores each employee’s individual weekly schedule (which can be different for different employees).  The following is supported:
 - the availability of the employee can vary from day to day during the week;
-- several time intervals of availability within a day are possible for one employee;
+- within a day, the employee can be available for one or more than one intervals, or not available at all;
 - the employee can be temporarily unavailable for a given interval (indicated by the Boolean flag in the type column).
 
 The **blocked_periods** table contains information regarding planned periods when each user will be unavailable, 
