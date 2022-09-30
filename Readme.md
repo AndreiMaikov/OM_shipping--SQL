@@ -127,7 +127,7 @@ corresponds to the latter approach; the former one is discussed in Shipping_reso
 
 This problem is considerably more complex than determining employee and vehicle availability. For example, it may need taking into account the maximum cargo weight and volume each available vehicle can carry and the weight and volume of the orders dispatched for shipping, or optimal routing considerations, or how much an employee can lift, or even pikers’ ability to do gift packing. 
 
-Due to the complexity of the problem, it would be ineffective to try to implement any appropriate solving algorithms on the database level. 
+Due to the complexity of the problem, it would be ineffective to try to implement any suitable solving algorithms on the database level. 
 
 
 
