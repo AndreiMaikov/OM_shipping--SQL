@@ -108,7 +108,7 @@ For details about these constraints, please see the code and comments in
 
 <a name = "Calculating_intervals"><h3>Calculating availability intervals for a wave</h3></a>
 
-Speaking mathematically, the problem of determining an employee’s availability for a given wave is essentially a problem of finding the intersection between two sets: the wave’s time interval and the union of all the time intervals when the employee is available (considering the employee’s regular availability and blocked periods). To solve this problem, one have to do some manipulations with inequalities that define time intervals involved. The same is true of determining vehicle availability.
+Speaking mathematically, the problem of determining an employee’s availability for a given wave is essentially a problem of finding the intersection between two sets: the wave’s time interval and the union of all the time intervals when the employee is available (taking into account the employee’s regular availability and blocked periods). To solve this problem, one have to do some manipulations with inequalities that define time intervals involved. The same is true of determining vehicle availability.
 
 Such calculations can be performed either on the database level using stored procedures or, alternatively, on the application level of the system (see 
 <a href = "#OM_Shipping diagram">the diagram</a>).
