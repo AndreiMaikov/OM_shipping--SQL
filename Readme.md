@@ -7,7 +7,7 @@ The schema mentioned in the title was created as part of a major project aimed a
 [On the entire OM database](#EntireDB) <br /> 
 [OM shipping process features and their implementation in the schema](#Shipping_features) <br />
 [Stage A: Determining employee and vehicle availability. OM Shipping schema](#Determining_availability) <br />
-  [Functions of the tables](#Table_functions) <br />
+  [How the data is organized into tabless](#Data_in_tables) <br />
   [Constraints](#Constraints) <br />
   [Calculating availability intervals for a wave](#Calculating_intervals) <br />
 [Stage B: Dispatching orders and vehicles among employees and preparing shipment assignments](#Stage_B) <br />
@@ -73,7 +73,7 @@ After the availability is calculated (see below), the results are placed into an
 - wave_available_staff
 - wave_available_vehicles
 
-<a name = "How the data is organized into tables"><h3>Functions of the tables</h3></a>
+<a name = "data_in_tables"><h3>How the data is organized into tables</h3></a>
 
 The **wave_timings** table simply contains beginning and ending times of each wave.
 
