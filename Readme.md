@@ -132,8 +132,3 @@ As <a href = "#OM_Shipping diagram">the diagram</a> shows, information required 
 
 I would like to thank Alek Mlynek for initiating this project as well as discussing it in depth and in detail.
 
-![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
-
-This sentence uses `$` delimiters to show math inline: $\sqrt{3x-1}+(1+x)^2$
-
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
