@@ -7,7 +7,7 @@ The schema mentioned in the title was created as part of a major project aimed a
 [On the entire OM database](#EntireDB) <br /> 
 [OM shipping process features and their implementation in the schema](#Shipping_features) <br />
 [Stage A: Determining employee and vehicle availability. OM Shipping schema](#Determining_availability) <br />
-  [How the data is organized into tabless](#Data_in_tables) <br />
+  [How the data is organized into tables](#Data_in_tables) <br />
   [Constraints](#Constraints) <br />
   [Calculating availability intervals for a wave](#Calculating_intervals) <br />
 [Stage B: Dispatching orders and vehicles among employees and preparing shipment assignments](#Stage_B) <br />
@@ -20,11 +20,11 @@ The following diagram shows the DB’s conceptual data model:
 
 ![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM.svg)
 
-Tables in the diagram are marked accordingly to the type of information they hold – whether it is related to customers, products, etc. The Common group includes a three-table structure **users&ndash;user_roles&ndash;roles**, which is worth elaborating on here.
+Tables in the diagram are marked accordingly to the type of information they hold – whether it is related to customers, products, etc. The Common group includes a three-table structure **users&nbsp;&ndash;&nbsp;user_roles&nbsp;&ndash;&nbsp;roles**, which is worth elaborating on here.
 
-It is possible that someone involved in OM business processes has more than one role role. For example, a person can act in one transaction as a buyer and in other &mdash; as a seller, or the same employee can pick an order and deliver it as a driver. 
+It is possible that someone involved in OM business processes has more than one role. For example, a person can act in one transaction as a buyer and in other &mdash; as a seller, or the same employee can pick an order and deliver it as a driver. 
 
-This results in many-to-many relationships between **users** (those involved in the OM business processes) and **the roles** available in such processes (that are Customer, Vendor, Administrator, Picker and Driver). To resolve these many-to-many relationships in compliance with the third normal form requirements, the structure users&ndash;user_roles&ndash;roles is utilized. Each row of the latter table corresponds to a user and one of the user’s roles.
+This results in many-to-many relationships between the **"users"** (actors of the OM business processes) and the **roles** available in such processes (which are Customer, Vendor, Administrator, Picker and Driver). To resolve these many-to-many relationships in compliance with the third normal form requirements, the table structure users&nbsp;&ndash;&nbsp;user_roles&nbsp;&ndash;&nbsp;roles is utilized. Each row of the user_roles table corresponds to a user and one of the user’s roles.
 
 The structure of the Shipping table group and the reasons why this structure was chosen are discussed below.
 
@@ -73,7 +73,7 @@ After the availability is calculated (see below), the results are placed into an
 - wave_available_staff
 - wave_available_vehicles
 
-<a name = "data_in_tables"><h3>How the data is organized into tables</h3></a>
+<a name = "Data_in_tables"><h3>How the data is organized into tables</h3></a>
 
 The **wave_timings** table contains beginning and ending times of each wave.
 
