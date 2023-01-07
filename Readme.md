@@ -26,7 +26,7 @@ It is possible that someone involved in OM business processes has more than one 
 
 This results in many-to-many relationships between the **"users"** (actors of the OM business processes) and the **roles** available in such processes (which are Customer, Vendor, Administrator, Picker and Driver). To resolve these many-to-many relationships in compliance with the third normal form requirements, the table structure users&nbsp;&ndash;&nbsp;user_roles&nbsp;&ndash;&nbsp;roles is utilized. Each row of the user_roles table corresponds to a user and one of the user’s roles.
 
-The structure of the Shipping table group and the reasons why this structure was chosen are discussed below.
+The structure of the Shipping table group and the reasons why this structure was chosen are discussed in the following sections.
 
 
 <a name = "Shipping_features"><h2>OM shipping process features and their implementation in the schema</h2></a>
