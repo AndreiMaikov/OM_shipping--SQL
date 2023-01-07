@@ -70,7 +70,7 @@ The five tables used for determining employee and vehicle availability are:
 - vehicles;
 - vehicles_out_of_service.
 
-After the availability is calculated (see below), the results are placed into another two tables:
+After the availability is calculated (see <a href="#Calculating_intervals">below</a>), the results are placed into another two tables:
 - wave_available_staff
 - wave_available_vehicles
 
@@ -80,8 +80,7 @@ The **wave_timings** table contains beginning and ending times of each wave.
 
 The **staff_regular_availability** table stores each employee’s individual weekly schedule (which can be different for different employees).  The following is supported:
 - the availability of the employee can vary from day to day during the week;
-- within a day, the employee can be available for one or more than one intervals, or not available at all;
-- the employee can be temporarily unavailable for a given interval (indicated by the Boolean flag in the type column).
+- within a day, the employee can be available for one or more than one intervals, or not available at all.
 
 The **blocked_periods** table contains information regarding planned periods when each user will be unavailable, 
 	such as vacations, leaves for medical reasons, 
