@@ -20,7 +20,7 @@ The following diagram shows the DB’s conceptual data model:
 
 ![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM.svg)
 
-Tables in the diagram are marked accordingly to the type of information they hold – whether it is related to customers, products, etc. The Common group includes a three-table structure **users&nbsp;&ndash;&nbsp;user_roles&nbsp;&ndash;&nbsp;roles**, which is worth elaborating on here.
+Tables in the diagram are grouped accordingly to the type of information they hold – whether it is related to customers, products, etc. The Common group includes a three-table structure **users&nbsp;&ndash;&nbsp;user_roles&nbsp;&ndash;&nbsp;roles**, which is worth elaborating on here.
 
 It is possible that someone involved in OM business processes has more than one role. For example, a person can act in one transaction as a buyer and in other &mdash; as a seller, or the same employee can pick an order and deliver it as a driver. 
 
