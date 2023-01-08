@@ -123,7 +123,7 @@ corresponds to the latter approach; the former one is discussed in Shipping_reso
 
 This problem is considerably more complex than determining employee and vehicle availability. For example, it may need taking into account the maximum cargo weight and volume each available vehicle can carry and the weight and volume of the orders dispatched for shipping, or optimal routing considerations, or how much an employee can lift, or even pickers’ ability to do gift packing. 
 
-Due to the complexity of the problem, it would be ineffective to try to implement any suitable solving algorithm at the database level&nbsp;&mdash;
+Due to the complexity of the problem, it would be ineffective to try to implement any suitable solving algorithm completely at the database level&nbsp;&mdash;
 it should be done at the application level. Therefore, the only function of the database in Stage B is to provide data for such an application-level algorithm, which would be run partially by the system itself and partially by the administrator.
 
 As <a href = "#OM_Shipping diagram">the diagram</a> shows, information required for Stage B and related to the employees’ and the vehicles’ capabilities is stored in the picker_profiles, driver_profiles, and vehicles tables. Data related to the products' weights and sizes and the orders' contents is stored in the Products and Orders sections of the database, and the information for routing can be retrieved from the Customers and Vendors sections as well as the addresses table. All this, along with the data held in the wave_timings, wave_available_staff, and wave_available_vehicles tables, provides for successful completion of Stage B at the OM system's application level.
