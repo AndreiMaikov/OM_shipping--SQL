@@ -110,21 +110,17 @@ For details about these constraints, please see the code and comments in
 
 Speaking mathematically, the problem of determining an employee’s availability for a given wave is essentially a problem of finding the intersection between two sets: the wave’s time interval and the union of all the time intervals when the employee is available (taking into account the employee’s regular availability and blocked periods). To solve this problem, one have to do some manipulations with inequalities that define time intervals involved. The same is true of determining vehicle availability.
 
-Such calculations can be performed either at the database level using stored procedures or, alternatively, at the application level of the system (see 
+Such calculations can be performed either at the database level, alternatively, at the application level of the system (see 
 <a href = "#OM_Shipping diagram">the diagram</a>).
 
-Each of these options has its advantages and drawbacks. Choosing between them needs weighing such factors as the convenience of implementation and maintenance as well as the effect on the performance of the specific system in question.
-
-In the case of the OM system, a solution based on DB stored procedures was implemented initially, but the final decision was in favour of the use of the application level. The code in 
-<a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>
-corresponds to the latter approach; the former one is discussed in Shipping_resource_availability __SQL.
+Each of these options has its advantages and drawbacks. Choosing between them needs weighing such factors as the convenience of implementation and maintenance as well as the effect on the performance of the specific system in question. A database-level solution based on DB stored proceduresin is discussed in <a href="https://github.com/AndreiMaikov/Shipping_resources_availability--SQL">Shipping Resources Availability Project</a>.
 
 <a name = "Stage_B"><h2>Stage B: Dispatching orders and vehicles among employees and preparing shipment assignments</h2></a>
 
 This problem is considerably more complex than determining employee and vehicle availability. For example, it may need taking into account the maximum cargo weight and volume each available vehicle can carry and the weight and volume of the orders dispatched for shipping, or optimal routing considerations, or how much an employee can lift, or even pickers’ ability to do gift packing. 
 
 Due to the complexity of the problem, it would be ineffective to try to implement any suitable solving algorithm completely at the database level&nbsp;&mdash;
-it should be done at the application level. Therefore, the only function of the database in Stage B is to provide data for such an application-level algorithm, which would be run partially by the system itself and partially by the administrator.
+it should be done at the application level. However, utilizing some stored procedures can be useful in Stage B.
 
 As <a href = "#OM_Shipping diagram">the diagram</a> shows, information required for Stage B and related to the employees’ and the vehicles’ capabilities is stored in the picker_profiles, driver_profiles, and vehicles tables. Data related to the products' weights and sizes and the orders' contents is stored in the Products and Orders sections of the database, and the information for routing can be retrieved from the Customers and Vendors sections as well as the addresses table. All this, along with the data held in the wave_timings, wave_available_staff, and wave_available_vehicles tables, provides for successful completion of Stage B at the OM system's application level.
 
