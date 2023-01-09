@@ -48,7 +48,7 @@ Wave planning can be done in two stages: <br>
 These tasks define the structure of the Shipping section [of the OM database]. The Shipping tables can be designed within a smaller schema &mdash; the **OM Shipping schema**&nbsp;&mdash; which includes only them and the users&nbsp;&ndash;&nbsp;user_roles&nbsp;&ndash;&nbsp;roles group of the Common section; in other words,
 <p align = "center">
    OM Shipping schema&nbsp;&nbsp;=&nbsp;&nbsp;[&nbsp;Shipping tables from the OM schema&nbsp;] 
-	+ [&nbsp;users&nbsp;&mdash;&nbsp;user_roles&nbsp;&mdash;&nbsp;roles tables&nbsp;] .
+	+ [&nbsp;users&nbsp;&ndash;&nbsp;user_roles&nbsp;&ndash;&nbsp;roles tables&nbsp;] .
 </p>
 
 The following diagram shoes the OM Shipping schema along with the Stage A and B data flows in the OM system (for the code, see
