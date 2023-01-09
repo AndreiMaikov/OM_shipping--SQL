@@ -45,7 +45,7 @@ Wave planning can be done in two stages: <br>
 
 <a name = "Determining_availability"><h2>Stage A: Determining employee and vehicle availability. OM Shipping schema</h2></a>
 
-These tasks define the structure of the Shipping section [of the OM database]. The Shipping tables can be designed within a smaller schema &mdash; **OM Shipping schema**&nbsp;&mdash; which includes only them and the users&nbsp;&ndash;&nbsp;user_roles&nbsp;&ndash;&nbsp;roles group of the Common section; in other words,
+These tasks define the structure of the Shipping section [of the OM database]. The Shipping tables can be designed within a smaller schema &mdash; the **OM Shipping schema**&nbsp;&mdash; which includes only them and the users&nbsp;&ndash;&nbsp;user_roles&nbsp;&ndash;&nbsp;roles group of the Common section; in other words,
 <p align = "center">
    OM Shipping schema&nbsp;&nbsp;=&nbsp;&nbsp;[&nbsp;Shipping tables from the OM schema&nbsp;] 
 	+ [&nbsp;users&nbsp;&mdash;&nbsp;user_roles&nbsp;&mdash;&nbsp;roles tables&nbsp;] .
