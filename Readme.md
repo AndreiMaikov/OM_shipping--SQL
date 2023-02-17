@@ -93,7 +93,7 @@ For each vehicle, the **vehicles_not_in_service** table provides beginning and e
 
 Within each wave and for employee, the table **wave_available_staff** lists all the time intervals that the employee is available for (during the entire interval). The **wave_available_vehicles** table provides the same information about the vehicles.
 
-**Remark.**&nbsp;&nbsp;For some of the tables, only part of their columns are shown in the diagram if this does not affect the problems considered in the next sections. For example, it does not matter for wave planning whether the `users` table contains the column holding users` email addresses.
+**Remark.**&nbsp;&nbsp;For some of the tables, only part of their columns are shown in the diagram if this does not matter for the problems considered in the next sections (for example, it does affect wave planning whether the `users` table contains the column holding users` email addresses).
 
 
 <a name = "Constraints"><h3>Constraints</h3></a>
