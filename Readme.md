@@ -59,7 +59,7 @@ To integrate the Shipping tables developed this way into the entire OM schema, o
 
 <a name = "OM_Shipping diagram">
 	
-![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM_Shipping_0.2.svg)
+![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM_Shipping_0.5.svg)
 	
 </a>
 
