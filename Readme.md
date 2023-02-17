@@ -18,7 +18,7 @@ The schema mentioned in the title was created as part of a major project aimed a
 The OM system architecture includes a 3NF database (MySQL). Not only does this DB store all the information about OM's customers and their orders as well as sellers and their products, but it is used for planning shipping operations. 
 The following diagram shows the DB’s conceptual data model:
 
-![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM.svg)
+![ ](https://github.com/AndreiMaikov/MVM_Shipping--SQL/blob/main/images/OM_Full.svg)
 
 Tables in the diagram are grouped accordingly to the type of information they hold – whether it is related to customers, products, etc. The Common group includes a three-table structure **users&nbsp;&ndash;&nbsp;user_roles&nbsp;&ndash;&nbsp;roles**, which is worth elaborating on here.
 
