@@ -21,6 +21,7 @@ DROP TABLE IF EXISTS roles;
 CREATE TABLE roles (
 	  id INT NOT NULL AUTO_INCREMENT
 	, role_name varchar(20) NOT NULL
+	, CONSTRAINT role_duplicate_r UNIQUE (role_id)
 	, PRIMARY KEY (id)
 );
 INSERT INTO roles
@@ -40,6 +41,7 @@ CREATE TABLE user_roles (
 	  id INT NOT NULL AUTO_INCREMENT
 	, user_id INT NOT NULL
 	, role_id	INT NOT NULL
+	, CONSTRAINT user_role_duplicate_ur UNIQUE (user_id, role_id)
 	, PRIMARY KEY (id)
 	, FOREIGN KEY (user_id) REFERENCES users(id)
 		ON DELETE CASCADE ON UPDATE CASCADE
@@ -94,7 +96,7 @@ CREATE TABLE admin_profiles (
 );
 
 /*
-	List of all vehicles
+	List of all the vehicles used for pickup and delivery
 */
 DROP TABLE IF EXISTS vehicles;
 CREATE TABLE vehicles (
@@ -105,7 +107,7 @@ CREATE TABLE vehicles (
 	, vehicle_make VARCHAR(25) NULL
 	, vehicle_model VARCHAR(50) NULL
 	, vehicle_class CHAR(1) NULL
-	, license_number CHAR(10) NULL -- the vehicle's license plate number
+	, licence_number CHAR(10) NULL -- the vehicle's license plate number
 	, vin CHAR(17) NULL -- the vehicle's identification number
 	, owner_name VARCHAR(30) -- the name of the vehicle's registered owner
 	, is_leased BOOLEAN NOT NULL -- flag indicating whether the vehicle is leased
@@ -113,7 +115,7 @@ CREATE TABLE vehicles (
 	, leased_from DATETIME NULL
 	, leased_until DATETIME NULL
 	, CONSTRAINT vin_duplicate_vce UNIQUE (vin)
-	, CONSTRAINT licence_number UNIQUE (license_number)
+	, CONSTRAINT licence_number UNIQUE (licence_number)
 	, CONSTRAINT lease_status -- ensure that, if the vehicle is NOT leased, all of lease_dealer, leased_from and lease_until are NULL
 		CHECK (
 			(CASE
@@ -189,10 +191,10 @@ CREATE TABLE vehicles_not_in_service (
 
 
 /*
-							WAVE -- AVAILABLE RESOURCES
+							WAVE -- TIMINGS AND AVAILABLE RESOURCES
 */
 /*
-	Wave -- time parameters
+	Wave -- time timings
 */
 DROP TABLE IF EXISTS wave_timings;
 CREATE TABLE wave_timings (
