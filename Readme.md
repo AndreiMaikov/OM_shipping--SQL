@@ -107,7 +107,7 @@ A number of constraints are added to the Shipping tables.
 For details, please see the code and comments in
 <a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a> 
 and 
-<a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_triggers">OM_Shipping_triggers.sql</a>).
+<a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_triggers.sql">OM_Shipping_triggers.sql</a>).
 
 
 <a name = "Calculating_intervals"><h3>Calculating availability for a wave</h3></a>
