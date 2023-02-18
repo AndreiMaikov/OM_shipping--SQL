@@ -105,10 +105,12 @@ A number of constraints are added to the Shipping tables.
 - ON DELETE CASCADE and ON UPDATE CASCADE subclauses are defined to enforce data integrity where appropriate; otherwise, triggers are used for that.
 
 For details, please see the code and comments in
-<a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>).
+<a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a> 
+and 
+<a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_triggers.sql">OM_Shipping_triggers.sql</a>).
 
 
-<a name = "Calculating_intervals"><h3>Calculating availability intervals for a wave</h3></a>
+<a name = "Calculating_intervals"><h3>Calculating availability for a wave</h3></a>
 
 Speaking mathematically, the problem of determining an employee’s availability for a given wave is essentially a problem of finding the intersection between two sets: the wave’s time interval and the union of all the time intervals when the employee is available (taking into account the employee’s regular availability and blocked periods). To solve this problem, one have to do some manipulations with inequalities that define time intervals involved. The same is true of determining vehicle availability.
 
