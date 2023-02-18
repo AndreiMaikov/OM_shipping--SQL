@@ -96,15 +96,15 @@ Within each wave and for employee, the table **wave_available_staff** lists all 
 **Note.**&nbsp;&nbsp;For some of the tables, only part of their columns are shown in the diagram if this does not matter for the problems discussed in the next sections (for example, it does not affect wave planning the `users` table contains the column holding the dates the users were registered in the system).
 
 
-<a name = "Constraints"><h3>Constraints</h3></a>
+<a name = "Constraints and triggers"><h3>Constraints</h3></a>
 
 A number of constraints are added to the Shipping tables.
 
-- UNIQUE and CHECK constraints are used to prevent some possible data entry mistakes (such as associating one user id with more than one picker ids, a period’s beginning time being later than its ending time). 
+- UNIQUE and CHECK constraints are used to prevent some possible data entry mistakes (such as associating one user id with more than one picker ids, or a blocked period’s beginning time being later than its ending time). 
 
-- ON DELETE CASCADE and ON UPDATE CASCADE constraints are included to avoid errors caused by row deletion or updating when foreign keys are involved. 
+- ON DELETE CASCADE and ON UPDATE CASCADE subclauses are defined to enforce data integrity where appropriate; otherwise, trigeers are used for that.
 
-For details about these constraints, please see the code and comments in
+For details, please see the code and comments in
 <a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>).
 
 
