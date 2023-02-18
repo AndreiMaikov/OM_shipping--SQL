@@ -1,34 +1,7 @@
-/*********** prevent_user_role_update ***********/
-
-
-DELIMITER $$
-
-CREATE TRIGGER prevent_user_role_update
-BEFORE UPDATE
-ON user_roles FOR EACH ROW
-BEGIN
-    DECLARE errorMessage VARCHAR(255);
-    SET errorMessage = 'UPDATE operations are not allowed on user_roles for pickers, drivers and admins. Please use DELETE and INSERT instead.';
-                        
-    IF 
-    	OLD.role_id = 3 OR 
-    	OLD.role_id = 4 OR 
-    	OLD.role_id = 5 OR
-    	NEW.role_id = 3 OR 
-    	NEW.role_id = 4 OR 
-    	NEW.role_id = 5
-    THEN
-        SIGNAL SQLSTATE '45000' 
-            SET MESSAGE_TEXT = errorMessage;
-    END IF;
-END $$
-
-DELIMITER ;
-
-
-
-
-/*********** delete_picker_profile ***********/
+/* Automatically delete a user's picker profile
+   from the picker_profiles table 
+   if the user's picker role has been deleted 
+   from the user_role table */
 
 DELIMITER $$
 
@@ -44,8 +17,11 @@ END$$
 
 DELIMITER ;
 
-/*********** delete_driver_profile ***********/
 
+/* Automatically delete a user's driver profile
+   from the driver_profiles table	
+   if the user's driver role has been deleted 
+   from the user_role table */
 
 DELIMITER $$
 
@@ -61,8 +37,11 @@ END$$
 
 DELIMITER ;
 
-/*********** delete_admin_profile ***********/
 
+/* Automatically delete a user's admin profile
+   from the admin_profiles table 
+   if the user's admin role has been deleted 
+   from the user_role table */
 
 DELIMITER $$
 
@@ -77,9 +56,15 @@ BEGIN
 END$$
 
 DELIMITER ;
-	
-/**************************************************************************/
 
+
+/* Automatically delete 
+   from the staff_regular_availability table
+   all the the rows related to a user 
+   if a DELETE operation performed
+   on the user_roles tables resulted in
+   the user not having any employee role 
+   (i.e. picker, driver or admin). */
 
 CREATE TRIGGER delete_user_from_sra
 AFTER DELETE
@@ -97,6 +82,14 @@ ON user_roles FOR EACH ROW
     			)
     	)
 ;
+
+/* Automatically delete 
+   from the blocked_periods table
+   all the the rows related to a user 
+   if a DELETE operation performed
+   on the user_roles tables resulted in
+   the user not having any employee role 
+   (i.e. picker, driver or admin). */
 
 
 CREATE TRIGGER delete_user_from_bp
@@ -117,6 +110,14 @@ ON user_roles FOR EACH ROW
 ;
 
 
+/* Automatically delete 
+   from the wave_available_staff table
+   all the the rows related to a user 
+   if a DELETE operation performed
+   on the user_roles tables resulted in
+   the user not having any employee role 
+   (i.e. picker, driver or admin). */
+
 CREATE TRIGGER delete_user_from_ws
 AFTER DELETE
 ON user_roles FOR EACH ROW
@@ -133,13 +134,16 @@ ON user_roles FOR EACH ROW
     			)
     	)
 ;
-   
-/**************************************************************************/
-/************************* prevent INSERT *************************/
-   
-/********************  prevent_user_insert_sra  **********************************/
+
+
+DELIMITER ;
 
    
+/* Prevent inserting rows related to a user
+   into the staff_regular_availability table
+   if the user does not have an employee role
+   (i.e. picker, driver or admin)   
+   in the user_roles table */
 
 DELIMITER $$
    
@@ -168,8 +172,11 @@ END $$
 DELIMITER ;
 
 
-/********************  prevent_user_insert_bp  **********************************/
-
+/* Prevent inserting rows related to a user
+   into the blocked_periods table
+   if the user does not have an employee role
+   (i.e. picker, driver or admin)   
+   in the user_roles table */
 
 DELIMITER $$
    
@@ -197,8 +204,12 @@ END $$
 
 DELIMITER ;
 
-/********************  prevent_user_insert_bp  **********************************/
 
+/* Prevent inserting rows related to a user
+   into the wave_available_staff table
+   if the user does not have an employee role
+   (i.e. picker, driver or admin)   
+   in the user_roles table */
 
 DELIMITER $$
    
@@ -228,8 +239,10 @@ END $$
 DELIMITER ;
 
 
-/********************  prevent_picker_profile_insert  **********************************/
-
+/* Prevent inserting a user's picker profile
+   into the picker_profiles table
+   if the user does not have the picker role   
+   in the user_roles table */
 
 DELIMITER $$
    
@@ -249,8 +262,11 @@ END $$
 
 DELIMITER ;
 
-/********************  prevent_driver_profile_insert  **********************************/
 
+/* Prevent inserting a user's driver profile
+   into the driver_profiles table
+   if the user does not have the picker role   
+   in the user_roles table */
 
 DELIMITER $$
    
@@ -271,8 +287,10 @@ END $$
 DELIMITER ;
 
 
-/********************  prevent_admin_profile_insert  **********************************/
-
+/* Prevent inserting a user's picker profile
+   into the picker_profiles table
+   if the user does not have the picker role   
+   in the user_roles table */
 
 DELIMITER $$
    
@@ -291,5 +309,34 @@ BEGIN
 END $$
 
 DELIMITER ;
+
+/* Prevent direct changing a user's role 
+	if the role is picker, driver or admin. 
+	The role can be changed by deleting the old one 
+	and inserting a row specifying the new one */
+
+DELIMITER $$
+
+CREATE TRIGGER prevent_user_role_update
+BEFORE UPDATE
+ON user_roles FOR EACH ROW
+BEGIN
+    DECLARE errorMessage VARCHAR(255);
+    SET errorMessage = 'UPDATE operations are not allowed 
+	on user_roles for pickers, drivers and admins. 
+	Please use DELETE and INSERT instead.';
+                        
+    IF 
+    	OLD.role_id = 3 OR 
+    	OLD.role_id = 4 OR 
+    	OLD.role_id = 5 OR
+    	NEW.role_id = 3 OR 
+    	NEW.role_id = 4 OR 
+    	NEW.role_id = 5
+    THEN
+        SIGNAL SQLSTATE '45000' 
+            SET MESSAGE_TEXT = errorMessage;
+    END IF;
+END $$
 
 	
