@@ -8,7 +8,7 @@ The schema mentioned in the title was created as part of a major project aimed a
 [OM shipping process features and their implementation in the schema](#Shipping_features) <br />
 [Stage A: Determining employee and vehicle availability. OM Shipping schema](#Determining_availability) <br />
   [How the data is organized into tables](#Data_in_tables) <br />
-  [Constraints](#Constraints) <br />
+  [Constraints and triggers](#Constraints) <br />
   [Calculating availability intervals for a wave](#Calculating_intervals) <br />
 [Stage B: Dispatching orders and vehicles among employees and preparing shipment assignments](#Stage_B) <br />
 [Acknowledgements](#Acknowledgements) <br />
@@ -96,13 +96,13 @@ Within each wave and for employee, the table **wave_available_staff** lists all 
 **Note.**&nbsp;&nbsp;For some of the tables, only part of their columns are shown in the diagram if this does not matter for the problems discussed in the next sections (for example, it does not affect wave planning the `users` table contains the column holding the dates the users were registered in the system).
 
 
-<a name = "Constraints and triggers"><h3>Constraints</h3></a>
+<a name = "Constraints"><h3>Constraints and triggers</h3></a>
 
 A number of constraints are added to the Shipping tables.
 
 - UNIQUE and CHECK constraints are used to prevent some possible data entry mistakes (such as associating one user id with more than one picker ids, or a blocked period’s beginning time being later than its ending time). 
 
-- ON DELETE CASCADE and ON UPDATE CASCADE subclauses are defined to enforce data integrity where appropriate; otherwise, trigeers are used for that.
+- ON DELETE CASCADE and ON UPDATE CASCADE subclauses are defined to enforce data integrity where appropriate; otherwise, triggers are used for that.
 
 For details, please see the code and comments in
 <a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>).
