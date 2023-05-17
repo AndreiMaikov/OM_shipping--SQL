@@ -51,7 +51,7 @@ These tasks define the structure of the Shipping section [of the OM database]. T
 	+ [&nbsp;users&nbsp;&ndash;&nbsp;user_roles&nbsp;&ndash;&nbsp;roles tables&nbsp;] .
 </p>
 
-The following diagram shoes the OM Shipping schema along with the Stage A and B data flows in the OM system (for the code, see
+The following diagram shows the OM Shipping schema along with the Stage A and B data flows in the OM system (for the code, see
 <a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a>).
 To integrate the Shipping tables developed this way into the entire OM schema, one only needs to add them to the rest of the tables: no references between the Shipping tables and the tables in the Customers, Vendors, Products, and Orders sections are required.
 
