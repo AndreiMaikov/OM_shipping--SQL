@@ -85,11 +85,11 @@ The **staff_regular_availability** table stores each employee’s individual wee
 The **blocked_periods** table contains information regarding planned periods when each user will be unavailable, 
 	such as vacations, leaves for medical reasons, 
 	holidays specific to religious or cultural traditions, etc.
-	Each user can have arbitrary number (including zero) of blocked periods.
+	Each user can have an arbitrary number (including zero) of blocked periods.
 	
 The **vehicles** table stores comprehensive information on the vehicles the company uses for shipping. This information is mostly used in Stage B or for administrative purposes; in stage A, the table is only used as a list of the delivery vehicles owned or leased by the company, with their lease terms if applicable.
 
-For each vehicle, the **vehicles_not_in_service** table provides beginning and ending times of the planned periods when the vehicle cannot be used for shipping due to any reason – e.g., being in repairs or employed for another service. 
+For each vehicle, the **vehicles_not_in_service** table provides the beginning and ending times of the planned periods when the vehicle cannot be used for shipping due to any reason – e.g., being in repairs or employed for another service. 
 
 Within each wave and for employee, the table **wave_available_staff** lists all the time intervals that the employee is available for (during the entire interval). The **wave_available_vehicles** table provides the same information about the vehicles.
 
@@ -112,7 +112,7 @@ and
 
 <a name = "Calculating_intervals"><h3>Calculating availability for a wave</h3></a>
 
-Speaking mathematically, the problem of determining an employee’s availability for a given wave is essentially a problem of finding the intersection between two sets: the wave’s time interval and the union of all the time intervals when the employee is available (taking into account the employee’s regular availability and blocked periods). To solve this problem, one have to do some manipulations with inequalities that define time intervals involved. The same is true of determining vehicle availability.
+Speaking mathematically, the problem of determining an employee’s availability for a given wave is essentially a problem of finding the intersection between two sets: the wave’s time interval and the union of all the time intervals when the employee is available (taking into account the employee’s regular availability and blocked periods). To solve this problem, one has to do some manipulations with inequalities that define time intervals involved. The same is true of determining vehicle availability.
 
 Such calculations can be performed either at the database level or at the application level of the system (see 
 <a href = "#OM_Shipping diagram">the diagram</a>).
