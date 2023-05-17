@@ -76,7 +76,7 @@ After the availability is calculated (see <a href="#Calculating_intervals">below
 
 <a name = "Data_in_tables"><h3>How the data is organized into tables</h3></a>
 
-The **wave_timings** table contains beginning and ending times of each wave.
+The **wave_timings** table contains the beginning and ending times of each wave.
 
 The **staff_regular_availability** table stores each employee’s individual weekly schedule (which can be different for different employees).  The following is supported:
 - the availability of the employee can vary from day to day during the week;
