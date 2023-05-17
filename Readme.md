@@ -87,7 +87,7 @@ The **blocked_periods** table contains information regarding planned periods whe
 	holidays specific to religious or cultural traditions, etc.
 	Each user can have an arbitrary number (including zero) of blocked periods.
 	
-The **vehicles** table stores comprehensive information on the vehicles the company uses for shipping. This information is mostly used in Stage B or for administrative purposes; in stage A, the table is only used as a list of the delivery vehicles owned or leased by the company, with their lease terms if applicable.
+The **vehicles** table stores comprehensive information on the vehicles the company uses for shipping. This information is mostly used in Stage B or for administrative purposes; in Stage A, the table is only used as a list of the delivery vehicles owned or leased by the company, with their lease terms if applicable.
 
 For each vehicle, the **vehicles_not_in_service** table provides the beginning and ending times of the planned periods when the vehicle cannot be used for shipping due to any reason – e.g., being in repairs or employed for another service. 
 
