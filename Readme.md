@@ -130,5 +130,5 @@ As <a href = "#OM_Shipping diagram">the diagram</a> shows, information required 
 
 <a name="Acknowledgements"><h2>Acknowledgements</h2></a>
 
-I would like to thank Alek Mlynek for initiating this project as well as discussing it in depth and in detail.
+I would like to thank Alek Mlynek for initiating this project. Also, I am most grateful to him and Tue Hoang for the very helpful discusions we had on this project.
 
