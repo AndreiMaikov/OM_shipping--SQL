@@ -16,6 +16,7 @@ The schema mentioned in the title was created as part of a major project aimed a
 
 <a name="technologies"></a>
 <h2>Technologies</h2>
+
 - MySQL 8.0.27 / MySQL Workbench 8.0.28
 - AWS RDS
 
