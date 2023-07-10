@@ -4,6 +4,7 @@
 The schema mentioned in the title was created as part of a major project aimed at building from scratch some online marketplace (I’ll be referring to this particular online marketplace as just **OM**). 
 
 ## Contents
+[Technologies](#technologies)
 [On the entire OM database](#EntireDB) <br /> 
 [OM shipping process features and their implementation in the schema](#Shipping_features) <br />
 [Stage A: Determining employee and vehicle availability. OM Shipping schema](#Determining_availability) <br />
@@ -12,6 +13,11 @@ The schema mentioned in the title was created as part of a major project aimed a
   [Calculating availability intervals for a wave](#Calculating_intervals) <br />
 [Stage B: Dispatching orders and vehicles among employees and preparing shipment assignments](#Stage_B) <br />
 [Acknowledgements](#Acknowledgements) <br />
+
+<a name="technologies"></a>
+<h2>Technologies</h2>
+- MySQL 8.0.27 / MySQL Workbench 8.0.28
+- AWS RDS
 
 <a name = "EntireDB"><h2>On the entire OM database</h2></a>
 
