@@ -1,4 +1,3 @@
-
 # Online Marketplace Shipping Schema Project
 
 The schema mentioned in the title was created as part of a major project aimed at building from scratch some online marketplace (I’ll be referring to this particular online marketplace as just **OM**). 
@@ -10,7 +9,7 @@ The schema mentioned in the title was created as part of a major project aimed a
 [Stage A: Determining employee and vehicle availability. OM Shipping schema](#Determining_availability) <br />
   [How the data is organized into tables](#Data_in_tables) <br />
   [Constraints and triggers](#Constraints) <br />
-    [Examples](#constraint_and_trigger_and_demos)
+    [Examples](#constraint_and_trigger_and_demos) <br />
   [Calculating availability intervals for a wave](#Calculating_intervals) <br />
 [Stage B: Dispatching orders and vehicles among employees and preparing shipment assignments](#Stage_B) <br />
 [Acknowledgements](#Acknowledgements) <br />
