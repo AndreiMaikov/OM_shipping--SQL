@@ -112,18 +112,18 @@ A number of constraints are added to the Shipping tables.
 - ON DELETE CASCADE and ON UPDATE CASCADE subclauses are defined to enforce data integrity where appropriate; otherwise, triggers are used for that.
 
 For details, please see the code and comments in
-<a href="/src/OM_Shipping_schema_constraints.sql">OM_Shipping_schema_constraints.sql</a> 
+<a href="/src/OM_Shipping_schema_tables.sql">OM_Shipping_schema_tables.sql</a> 
 and 
-<a href="/src/OM_Shipping_schema_triggers.sql">OM_Shipping_shema_triggers.sql</a>).
+<a href="/src/OM_Shipping_schema_triggers.sql">OM_Shipping_schema_triggers.sql</a>).
 
 <a name="trigger_and_constraint_demos"></a>
 
 <h4>Examples</h4>
 
 Examples illustrating how these constraints and triggers enforce the data integrity in the OM shipping management system are provided in
-<a href="/src/examples/Table_populating.sql">Table_populating.sql</a>,
-<a href="/src/examples/Constraints_demo.sql">Constraints_demo.sql</a> and
-<a href="/src/examples/Triggers_demo.sql">Table_populating.sql</a>. 
+<a href="/src/examples/table_populating.sql">table_populating.sql</a>,
+<a href="/src/examples/constraints_demo.sql">constraints_demo.sql</a> and
+<a href="/src/examples/triggers_demo.sql">table_populating.sql</a>. 
 
 
 <a name = "Calculating_intervals"><h3>Calculating availability for a wave</h3></a>
