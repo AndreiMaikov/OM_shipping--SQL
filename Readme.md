@@ -116,6 +116,15 @@ For details, please see the code and comments in
 and 
 <a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_triggers.sql">OM_Shipping_triggers.sql</a>).
 
+<a name="trigger&constraint_demos"></a>
+
+<h4>Examples</h4>
+
+Examples illustrating how these constraints and triggers enforce the data integrity in the OM shipping management system are provided in
+<a href="/src/examples/Table_populating.sql>**Table_populating.sql**</a>,
+<a href="/src/examples/Constraints_demo.sql>**Constraints_demo.sql**</a>
+<a href="/src/examples/Triggers_demo.sql>**Table_populating.sql**</a>. 
+
 
 <a name = "Calculating_intervals"><h3>Calculating availability for a wave</h3></a>
 
