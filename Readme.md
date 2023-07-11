@@ -112,9 +112,9 @@ A number of constraints are added to the Shipping tables.
 - ON DELETE CASCADE and ON UPDATE CASCADE subclauses are defined to enforce data integrity where appropriate; otherwise, triggers are used for that.
 
 For details, please see the code and comments in
-<a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a> 
+<a href="/src/OM_Shipping_schema.sql">OM_Shipping_schema.sql</a> 
 and 
-<a href="https://github.com/AndreiMaikov/MVM_Shipping--SQL/tree/main/src/OM_Shipping_triggers.sql">OM_Shipping_triggers.sql</a>).
+<a href="/src/OM_Shipping_triggers.sql">OM_Shipping_triggers.sql</a>).
 
 <a name="trigger&constraint_demos"></a>
 
