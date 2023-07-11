@@ -121,9 +121,9 @@ and
 <h4>Examples</h4>
 
 Examples illustrating how these constraints and triggers enforce the data integrity in the OM shipping management system are provided in
-<a href="/src/examples/table_populating.sql">table_populating.sql</a>,
-<a href="/src/examples/constraints_demo.sql">constraints_demo.sql</a> and
-<a href="/src/examples/triggers_demo.sql">table_populating.sql</a>. 
+<a href="/src/examples/able_populating.sql">table_populating.sql</a>,
+<a href="/src/examples/onstraints_demo.sql">constraints_demo.sql</a> and
+<a href="/src/examples/riggers_demo.sql">table_populating.sql</a>. 
 
 
 <a name = "Calculating_intervals"><h3>Calculating availability for a wave</h3></a>
